@@ -1,3 +1,9 @@
+body {
+    background-image: url("../img/background1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 header {
     height: 120px;
     position: fixed;
@@ -6,23 +12,53 @@ header {
 }
 
     .pyf {
+        margin-left: 2%;
+        margin-top: 30px;
+        font-size: 20px;
         float: left;
         color: white;
     }
 
+        .pyf a {
+            text-decoration: none;
+            color: white;
+        }
+
     #menu {
+        margin-top: 72px;
+        margin-right: 2%;
+        font-size: 25px;
         float: right;
+    }
+
+    #menu a, #menu a:visited {
+        color: white;
     }
 
 #principal {
     height: auto;
     min-height: 500px;
-    background-color:red;
 }
 
     .imgPortada {
         width: 100%;
         height: auto;
+    }
+
+    .frase {
+        background-color: blue;
+    }
+
+        .frase article {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+    #vacio {
+        height: 500px;
     }
 
 footer {
