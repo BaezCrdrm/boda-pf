@@ -1,7 +1,7 @@
 body {
-    background-image: url("../img/background1.jpg");
+    /*background-image: url("../img/background1.jpg");
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 header {
@@ -26,9 +26,6 @@ header {
 
     #menu {
         margin-top: 72px;
-        margin-right: 2%;
-        font-size: 25px;
-        float: right;
     }
 
     #menu a, #menu a:visited {
@@ -59,6 +56,20 @@ header {
 
     #vacio {
         height: 500px;
+        background-image: url("../img/background1.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .simple {
+        height: 300px;
+    }
+
+    #vacio1 {
+        height: 500px;
+        background-image: url("../img/portada1.jpg");
+        background-attachment: fixed;
+        background-size: cover;
     }
 
 footer {

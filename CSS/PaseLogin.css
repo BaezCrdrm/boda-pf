@@ -1,0 +1,61 @@
+body {
+    background-image: url("../img/background2.jpg");
+    background-size: cover;
+}
+
+header {
+    height: 125px;
+
+    background-color: black;
+}
+
+    .pyf {
+        margin-left: 2%;
+        margin-top: 30px;
+        font-size: 20px;
+        float: left;
+        color: white;
+    }
+
+        .pyf a {
+            text-decoration: none;
+            color: white;
+        }
+
+    #menu {
+        margin-top: 72px;
+    }
+
+#principal {
+    min-height: 500px;
+}
+
+    #principal div {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+    }
+
+    #principal div form {
+        width: 100%;
+        height: auto;
+        margin-top: 100px; 
+    }
+
+        #titulo {
+            font-size: 23px;
+            margin-bottom: 5px;
+            text-align: center;
+            color: green;
+        }
+
+        #codigo {
+            width: 55%;
+            float: left
+        }
+
+        #submit {
+            width: 40%;
+            float: right;
+        }

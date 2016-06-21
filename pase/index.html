@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pase - Boda</title>
+
+        <link rel="stylesheet" href="../CSS/General.css">
+        <link rel="stylesheet" href="../CSS/PaseLogin.css">
+        <link rel="stylesheet" href="../CSS/Menu.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="pyf">
+                <a href="../" title="Ve al inicio"><h1>Boda</h1></a>
+            </div>
+
+            <nav id="menu">
+                <ul id="ul_menu">
+                    <li><a href="#" class="a_menu">Historia</a></li>
+                    <li><a href="#" class="a_menu">Galería</a></li>
+                    <li><a href="#" class="a_menu">Ubicación</a></li>
+                    <li><a href="#" class="a_menu">Pase</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="principal">
+            <div title="El código ha sido proporcionado de manera única.">
+                <form method="GET" action="../scripts/consultaCodigo.php">
+                    <h1 id="titulo"><label for="codigo">Ingresa tu código</label></h1>
+                    <input type="password" id="codigo" name="code" placeholder="Código" required="required">
+                    <input type="submit" id="submit" value="Consultar">
+                </form>
+
+                <br><br><a href="#" id="forgot">Olvidé mi código</a>
+            </div>
+        </section>
+    </body>
+</html>
