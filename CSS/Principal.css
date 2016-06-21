@@ -1,0 +1,31 @@
+header {
+    height: 120px;
+    position: fixed;
+    opacity: 0.8;
+    background-color: black;
+}
+
+    .pyf {
+        float: left;
+        color: white;
+    }
+
+    #menu {
+        float: right;
+    }
+
+#principal {
+    height: auto;
+    min-height: 500px;
+    background-color:red;
+}
+
+    .imgPortada {
+        width: 100%;
+        height: auto;
+    }
+
+footer {
+    height: 100px;
+    background-color: green;
+}
