@@ -1,14 +1,12 @@
-body {
-    /*background-image: url("../img/background1.jpg");
-    background-attachment: fixed;
-    background-size: cover;*/
-}
-
 header {
-    height: 120px;
+    min-height: 120px;
     position: fixed;
     opacity: 0.8;
     background-color: black;
+}
+
+header a {
+    list-style: none;
 }
 
     .pyf {
@@ -57,17 +55,6 @@ header {
     #vacio {
         height: 500px;
         background-image: url("../img/background1.jpg");
-        background-attachment: fixed;
-        background-size: cover;
-    }
-
-    .simple {
-        height: 300px;
-    }
-
-    #vacio1 {
-        height: 500px;
-        background-image: url("../img/portada1.jpg");
         background-attachment: fixed;
         background-size: cover;
     }

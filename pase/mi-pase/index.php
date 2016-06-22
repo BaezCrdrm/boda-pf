@@ -19,6 +19,9 @@
 <?php
     } 
     else {
-        echo "<h1>No da! D:</h1>";
+        echo "<script type='text/javascript'>
+            alert('Introduzca un código válido');
+            window.location.href = '../';
+        </script>";
     }
 ?>

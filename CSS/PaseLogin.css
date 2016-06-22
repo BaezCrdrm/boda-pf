@@ -1,13 +1,18 @@
 body {
     background-image: url("../img/background2.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
-    height: 125px;
-
+    min-height: 125px;
+    height: auto;
     background-color: black;
 }
+
+    header a {
+        list-style: none;
+    }
 
     .pyf {
         margin-left: 2%;
