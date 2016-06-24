@@ -13,14 +13,14 @@
         <link rel="stylesheet" href="CSS/Menu.css" media="all">
     </head>
     
-    <body onscroll="mostrarMenu(true)">
+    <body onscroll="cierra(document.getElementById('ul_menu'))">
         <header>
             <div class="pyf">
                 <a href="#" title="Estás en el inicio"><h1>Boda</h1></a>
             </div>
 
             <nav id="menu">
-                <img id="imgMenu" src="img/menu.jpg" title="Mostrar menú" onclick="mostrarMenu()" ontouchend="mostrarMenu()">
+                <img id="imgMenu" src="img/menu.jpg" title="Mostrar menú" ontouchend="mostrarMenu()">
 
                 <ul id="ul_menu">
                     <li><a href="#" class="a_menu">Historia</a></li>

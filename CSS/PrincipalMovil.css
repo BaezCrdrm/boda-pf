@@ -1,5 +1,5 @@
 /***** Movil *****/
-@media all and (orientation: portrait) and (max-width: 450px) {
+@media all and (orientation: portrait) and (max-width: 600px) {
     #vacio {
         height: 220px;
         background-attachment: initial !important;
