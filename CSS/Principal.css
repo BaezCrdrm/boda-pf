@@ -1,33 +1,32 @@
-header {
-    min-height: 120px;
-    position: fixed;
-    opacity: 0.8;
+/***** General *****/
+body, header {
     background-color: black;
 }
 
-header a {
-    list-style: none;
+header {
+    color: white;
 }
 
-    .pyf {
-        margin-left: 2%;
-        margin-top: 30px;
-        font-size: 20px;
-        float: left;
-        color: white;
+    header a {
+        list-style: none;
+        text-decoration: none;
+        color:white;
     }
 
-        .pyf a {
-            text-decoration: none;
-            color: white;
-        }
+    header a:visited {
+        color:white;
+    }
 
-    #menu {
-        margin-top: 72px;
+    .pyf {
+        float: left;
     }
 
     #menu a, #menu a:visited {
         color: white;
+    }
+
+    #menu {
+        float: right;
     }
 
 #principal {
@@ -44,22 +43,17 @@ header a {
         background-color: blue;
     }
 
-        .frase article {
-            width: 75%;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
+    .frase article {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     #vacio {
-        height: 500px;
         background-image: url("../img/background1.jpg");
         background-attachment: fixed;
         background-size: cover;
     }
 
 footer {
-    height: 100px;
     background-color: green;
 }

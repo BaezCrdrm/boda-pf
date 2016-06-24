@@ -1,0 +1,36 @@
+/***** Desktop *****/
+
+/*** Header ***/
+header {
+    height: 120px;
+    position: fixed;
+    opacity: 0.8;
+}
+
+    .pyf {
+        margin-left: 2%;
+        margin-top: 30px;
+        font-size: 20px;
+        color: white;
+    }
+
+    #menu {
+        margin-top: 72px;
+    }
+
+/*** Section ***/
+    .frase article {
+        width: 75%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #vacio {
+        height: 600px;
+    }
+
+
+/*** Footer ***/
+footer {
+    height: 100px;
+}
