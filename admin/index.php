@@ -46,6 +46,8 @@
         echo "<form action='' method='post'>
           <input type='password' placeholder='Contraseña de administrador' name='password'/>
           <input type='hidden' name='user' value='admin'/><input type='submit' value='Entrar'/>
-        </form>";
+        </form>
+        
+        <h1 onclick='alert(window.innerWidth)'>Tamaño ventana</h1>";
     }
 ?>
