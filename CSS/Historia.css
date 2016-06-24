@@ -1,0 +1,33 @@
+#portada {
+    width: 100%;
+    height: auto;
+}
+
+.contenido {
+    height: 500px;
+    background-color: red;
+}
+
+    .cart {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /*column-count: 2;*/
+        column-gap: 20px;
+    }
+
+.vacio {
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#v1 {
+    background-image: url("../img/portada1.jpg");
+}
+
+#v2 {
+    background-image: url("../img/background1.jpg");
+}

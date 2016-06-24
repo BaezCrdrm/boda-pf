@@ -1,0 +1,65 @@
+header {
+    min-height: 120px;
+    position: fixed;
+    opacity: 0.8;
+    background-color: black;
+}
+
+header a {
+    list-style: none;
+}
+
+    .pyf {
+        margin-left: 2%;
+        margin-top: 30px;
+        font-size: 20px;
+        float: left;
+        color: white;
+    }
+
+        .pyf a {
+            text-decoration: none;
+            color: white;
+        }
+
+    #menu {
+        margin-top: 72px;
+    }
+
+    #menu a, #menu a:visited {
+        color: white;
+    }
+
+#principal {
+    height: auto;
+    min-height: 500px;
+}
+
+    .imgPortada {
+        width: 100%;
+        height: auto;
+    }
+
+    .frase {
+        background-color: blue;
+    }
+
+        .frase article {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+    #vacio {
+        height: 500px;
+        background-image: url("../img/background1.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+footer {
+    height: 100px;
+    background-color: green;
+}
