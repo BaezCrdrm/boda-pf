@@ -19,6 +19,7 @@ function sizeChanged()
      var size = window.innerWidth;
      var a_menu = document.getElementsByClassName("a_menu");
      var imgMenu = document.getElementById("imgMenu");
+     var art = document.getElementsByClassName("cart");
 
      if(size < 800)
      {       
@@ -27,6 +28,10 @@ function sizeChanged()
         }  
         imgMenu.style.display = "inline";
         document.getElementById("menu").style.marginTop = "40px";
+        
+        for(var index = 0; index < art.length; index++) {
+            art[index].style.columnCount = "1";
+        }
      }
      else {
         for (var index = 0; index < a_menu.length; index++) {
@@ -34,9 +39,14 @@ function sizeChanged()
         }
         imgMenu.style.display = "none";
         document.getElementById("menu").style.marginTop = "72px";
+        
+        for(var index = 0; index < art.length; index++) {
+            art[index].style.columnCount = "2";
+        }
      }
      
      a_menu = null;
+     art = null;
 }
 
 function mostrarMenu()
