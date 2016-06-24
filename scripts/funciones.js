@@ -49,19 +49,19 @@ function sizeChanged()
      art = null;
 }
 
-function mostrarMenu()
+function mostrarMenu(muestra = null)
 {
-    var a_menu = document.getElementsByClassName("a_menu");
-    
-    if(a_menu[0].style.display == "none")
-    {
-        for (var index = 0; index < a_menu.length; index++) {
-            a_menu[index].style.display = "list-item";
-        }  
+    var ul_menu = document.getElementById("ul_menu");
+
+    if(ul_menu.children[0].style.display == "none" && muestra == null)
+    {   
+        for (var index = 0; index < ul_menu.childElementCount; index++) {
+            ul_menu.children[index].style.display = "list-item";
+        }
     }
     else {
-        for (var index = 0; index < a_menu.length; index++) {
-            a_menu[index].style.display = "none";
-        }  
+        for (var index = 0; index < ul_menu.childElementCount; index++) {
+            ul_menu.children[index].style.display = "none";
+        }
     }
 }
