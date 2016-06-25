@@ -60,12 +60,14 @@ function mostrarMenu()
         }
     }
     else {
-        cierra(ul_menu);
+        cierra(ul_menu, true);
     }
 }
 
-function cierra(ul_menu) {
-    for (var index = 0; index < ul_menu.childElementCount; index++) {
-        ul_menu.children[index].style.display = "none";
+function cierra(ul_menu, myBool) {
+    if(myBool == true) {
+        for (var index = 0; index < ul_menu.childElementCount; index++) {
+            ul_menu.children[index].style.display = "none";
+        }
     }
 }

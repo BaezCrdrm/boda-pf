@@ -1,0 +1,39 @@
+header {
+    height: 120px;
+    position: absolute;
+}
+
+    .pyf {
+        margin-left: 2%;
+        margin-top: 30px;
+        font-size: 20px;
+        color: white;
+    }
+
+    #menu {
+        margin-top: 72px;
+    }
+
+        .contenido {
+            height: 400px;
+            background-color: red;
+        }
+
+            .cart {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                column-count: 2;
+                column-gap: 20px;
+            }
+
+        .vacio {
+            height: 400px;
+            background-attachment: fixed;
+        }
+
+        #v2 {
+            background-position-y: 100px;
+        }

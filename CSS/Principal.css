@@ -7,13 +7,7 @@ header {
     color: white;
 }
 
-    header a {
-        list-style: none;
-        text-decoration: none;
-        color:white;
-    }
-
-    header a:visited {
+    header a, header a:visited {
         color:white;
     }
 

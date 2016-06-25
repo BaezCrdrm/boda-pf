@@ -1,26 +1,36 @@
+body, header {
+    background-color: darkgreen;
+}
+
 #portada {
     width: 100%;
     height: auto;
 }
 
-.contenido {
+/*.contenido {
     height: 500px;
     background-color: red;
-}
+}*/
+
+    header a, header a:visited {
+        color:white;
+    }
+
+    .pyf {
+        width: 100px;
+        float: left;
+    }
+
+    #menu {
+        float: right;
+    }
 
     .cart {
-        width: 90%;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        /*column-count: 2;*/
-        column-gap: 20px;
     }
 
 .vacio {
-    height: 300px;
-    background-attachment: fixed;
     background-size: cover;
 }
 
