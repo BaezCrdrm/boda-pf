@@ -1,5 +1,5 @@
 body, header {
-    background-color: darkgreen;
+    background-color: #FFFFFF;
 }
 
 #portada {
@@ -13,7 +13,7 @@ body, header {
 }*/
 
     header a, header a:visited {
-        color:white;
+        color: #CC9966;
     }
 
     .pyf {
@@ -28,7 +28,13 @@ body, header {
     .cart {
         margin-left: auto;
         margin-right: auto;
+        font-size: 14px;
     }
+
+.contenido {
+        background-color: #CC9966;
+        color: #FFFFFF
+}
 
 .vacio {
     background-size: cover;
