@@ -1,14 +1,14 @@
 /***** General *****/
 body, header {
-    background-color: black;
+    background-color: #FFFFFF;
 }
 
 header {
-    color: white;
+    color: #FF9999;
 }
 
     header a, header a:visited {
-        color:white;
+        color:#CC9966;
     }
 
     .pyf {
@@ -16,7 +16,7 @@ header {
     }
 
     #menu a, #menu a:visited {
-        color: white;
+        color: #CC9966;
     }
 
     #menu {
@@ -34,13 +34,15 @@ header {
     }
 
     .frase {
-        background-color: #FFFFCC;
-        color: #996633;
+        background-color: #FFFFFF;
+        color: #CC9966;
     }
 
     .frase article {
         margin-left: auto;
         margin-right: auto;
+
+        font-size: 14px;
     }
 
     #vacio {
