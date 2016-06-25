@@ -2,7 +2,10 @@
     font-family: "Avenir-next-regular";
     src: url("../fuentes/AvenirNextLTPro-Regular.otf");
 }
-
+@font-face {
+    font-family: "Avenir-next-Ulight";
+    src: url("../fuentes/Avenir Next LT W01 Ultra Light.otf");
+}
 @font-face {
     font-family: "Avenir-next-mediumcn";
     src: url("../fuentes/AvenirNextLTPro-MediumCn.otf");
@@ -29,5 +32,5 @@ header a {
 }
 
 #principal {
-    font-family: Avenir-next-regular;
+    font-family: Avenir-next-Ulight;
 }

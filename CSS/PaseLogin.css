@@ -7,10 +7,11 @@ body {
 header {
     min-height: 125px;
     height: auto;
-    background-color: black;
+    background-color: #FFF;
 }
 
     header a {
+color: #336699;
         list-style: none;
     }
 
@@ -24,7 +25,7 @@ header {
 
         .pyf a {
             text-decoration: none;
-            color: white;
+            color: #336699;
         }
 
     #menu {

@@ -32,8 +32,10 @@ body, header {
     }
 
 .contenido {
-        background-color: #CC9966;
-        color: #FFFFFF
+        background-color: #336699;
+        color: #FFFFFF;
+        font-family: Avenir-Next-Ulight
+        /*font-family: Univers-Light;*/
 }
 
 .vacio {
