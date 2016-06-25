@@ -43,6 +43,10 @@
         }
 }
 
+#menu {
+    font-family: Avenir-next-regular;
+}
+
 .a_menu {
     text-decoration: none;
     font-weight: bold;

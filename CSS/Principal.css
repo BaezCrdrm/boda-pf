@@ -34,7 +34,8 @@ header {
     }
 
     .frase {
-        background-color: blue;
+        background-color: #FFFFCC;
+        color: #996633;
     }
 
     .frase article {
