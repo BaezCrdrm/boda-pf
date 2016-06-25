@@ -1,0 +1,24 @@
+header {
+    background-color: blue;
+}
+
+body {
+    background-color: white;
+}
+
+    header a, header a:visited {
+        color:white;
+    }
+
+    .pyf {
+        width: 100px;
+        float: left;
+    }
+
+    #menu {
+        float: right;
+    }
+
+    #principal > div {
+        background-color: white;
+    }

@@ -2,34 +2,49 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Boda de Febe y Cristhian">
+        <meta name="keywords" content="Febe,Cristhian,Boda,Cruz Melgar,Hernández Báez, Quinta">
+
         <title>Boda FyP</title>
         <link rel="stylesheet" href="../CSS/General.css">
         <link rel="stylesheet" href="../CSS/Ubicacion.css">
         <link rel="stylesheet" href="../CSS/Menu.css">
+
+        <link rel="stylesheet" href="../CSS/General.css" media="all">
+        <link rel="stylesheet" href="../CSS/Ubicacion.css" media="all">
+        <link rel="stylesheet" href="../CSS/UbicacionDesktop.css" media="only screen and (min-device-width:799px)">
+        <link rel="stylesheet" href="../CSS/UbicacionMovil.css" media="handheld, screen and (max-device-width:799px)" />
+        <link rel="stylesheet" href="../CSS/Menu.css" media="all">
     </head>
 
-    <body onresize="sizeChanged()" onload="sizeChanged()">
+    <body onscroll="cierra(document.getElementById('ul_menu'))">
         <header>
             <div class="pyf">
                 <a href="../" title="Ve al inicio"><h1>Boda</h1></a>
             </div>
 
             <nav id="menu">
-                <img id="imgMenu" src="../img/menu.jpg" title="Mostrar menú" onclick="mostrarMenu()">
+                <img id="imgMenu" src="../img/menu.jpg" title="Mostrar menú" ontouchend="mostrarMenu()">
                 <ul id="ul_menu">
-                    <li><a href="#" class="a_menu">Historia</a></li>
+                    <li><a href="../historia/" class="a_menu">Historia</a></li>
                     <li><a href="#" class="a_menu">Galería</a></li>
                     <li><a href="#" class="a_menu">Ubicación</a></li>
-                    <li><a href="#" class="a_menu">Pase</a></li>
+                    <li><a href="../pase/" class="a_menu">Pase</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d797.3351498383997!2d-96.92838797083219!3d19.432263963889873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzU2LjEiTiA5NsKwNTUnNDAuMiJX!5e1!3m2!1ses-419!2smx!4v1466732544183" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <section id="principal">
+            <div>
+                <iframe id="map"" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.5400848206746!2d-96.93002948557017!3d19.432267745727774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzU2LjEiTiA5NsKwNTUnNDAuMiJX!5e0!3m2!1ses!2smx!4v1466835318621" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             <!--19.4322627
             -96.9278408
             19.4322627, -96.9278408-->
+            <h2>¿Cómo llegar?</h2>
+            </div>
+
+            
         </section>
     </body>
     <script src="../scripts/funciones.js"></script>

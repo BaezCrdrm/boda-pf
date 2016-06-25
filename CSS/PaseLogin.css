@@ -28,6 +28,7 @@ header {
         }
 
     #menu {
+        float: right;
         margin-top: 72px;
     }
 

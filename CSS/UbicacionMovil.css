@@ -1,0 +1,36 @@
+@media all and (min-width:601px) and (max-width:799px) {
+    #principal > div, #map {
+        
+    }
+
+    #menu {
+        background-color: blue;
+    }
+}
+
+@media all and (max-width:600px) {
+    #principal > div, #map {
+        width: 100%;
+        min-height: 350px;
+        height: auto;
+    }
+}
+
+header {
+    min-height: 100px;
+}
+
+    .pyf {
+        width: 150px;
+        padding-top: 15px;
+        margin-left: 10px;
+
+        font-size: 23px;
+    }
+
+    #menu {
+        margin-top:20px;
+        margin-right: 20px;
+    }
+
+    
