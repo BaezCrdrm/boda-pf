@@ -74,7 +74,7 @@ function cierra(ul_menu, myBool) {
 
 function getTime() {
     now = new Date();
-    y2k = new Date("Jul 23 2016 19:00:00");
+    y2k = new Date("Jul 23 2016 17:30:00");
     days = (y2k - now) / 1000 / 60 / 60 / 24;
     daysRound = Math.floor(days);
     hours = (y2k - now) / 1000 / 60 / 60 - (24 * daysRound);

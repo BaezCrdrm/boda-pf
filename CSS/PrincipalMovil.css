@@ -4,6 +4,7 @@
         height: 220px;
         background-attachment: initial !important;
         background-repeat: no-repeat;
+        background-position: center;
     }
 
     .frase article {
@@ -20,8 +21,8 @@
 @media all and (orientation: portrait) and (max-width: 799px) and (min-width: 451px) {
     #vacio {
         height: 500px;
-        background-position-y: 250px;
-        background-position-x: -350px;
+        background-position-y: 350px;
+        background-position-x: -700px;
     }
 
     .frase article {

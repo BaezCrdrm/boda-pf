@@ -1,8 +1,8 @@
-header {
+body, header {
     background-color: #FFFFFF;
 }
 
-body, .contenido {
+/*body, */.contenido {
     background-color: #336699;
 }
 
@@ -10,11 +10,6 @@ body, .contenido {
     width: 100%;
     height: auto;
 }
-
-/*.contenido {
-    height: 500px;
-    background-color: red;
-}*/
 
     header a, header a:visited {
         color: #CC9966;

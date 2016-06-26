@@ -126,7 +126,8 @@ header {
 
         .vacio {
             height: 400px;
-            background-attachment: fixed;
+            background-attachment: initial;
+            background-position: center;
         }
 
         .imgHorizontal {
