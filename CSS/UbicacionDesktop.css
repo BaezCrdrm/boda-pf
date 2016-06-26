@@ -41,6 +41,8 @@ header {
     margin-top:10px;
 }
 
-    td {
-        border: 1px solid black;
+    .imgDir img {
+        width: 80px;
+        height: auto;
+        padding: 10px;
     }

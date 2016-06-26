@@ -18,3 +18,7 @@ body, header {
     #map-container, #instrucciones {
         background-color: white;
     }
+
+    #instrucciones table {
+        border-top: 1px solid black;
+    }
