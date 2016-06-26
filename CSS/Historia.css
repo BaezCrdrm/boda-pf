@@ -1,33 +1,74 @@
+body, header {
+    background-color: #FFFFFF;
+}
+
+/*body, */.contenido {
+    background-color: #336699;
+}
+
 #portada {
     width: 100%;
     height: auto;
 }
 
-.contenido {
-    height: 500px;
-    background-color: red;
-}
-
-    .cart {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        /*column-count: 2;*/
-        column-gap: 20px;
+    header a, header a:visited {
+        color: #CC9966;
     }
 
+    .pyf {
+        width: 100px;
+        float: left;
+    }
+
+    #menu {
+        float: right;
+    }
+
+/*Section*/
+/*#titulo {
+    width: 100%;
+    height: auto;
+}*/
+
+.cart {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+
+.contenido {
+        color: #FFFFFF;
+        font-family: Avenir-Next-Ulight;
+        /*font-family: Univers-Light;*/
+}
+
+.contenido img {
+    border-radius: 5px;
+}
+
 .vacio {
-    height: 300px;
-    background-attachment: fixed;
     background-size: cover;
 }
 
 #v1 {
-    background-image: url("../img/portada1.jpg");
+    background-image: url("../img/HistoriaSec.jpg");
 }
 
 #v2 {
-    background-image: url("../img/background1.jpg");
+    background-image: url("../img/HistoriaTerc.jpg");
+}
+
+#v3 {
+    background-image: url("../img/HistoriaFinal.jpg");
+}
+
+.videos {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+video {
+    width: 80%;
+    height: auto;
 }

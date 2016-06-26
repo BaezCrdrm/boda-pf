@@ -1,0 +1,149 @@
+/***** Movil *****/
+@media all and (orientation: portrait) and (max-width: 600px) {
+    #vacio {
+        height: 220px;
+        background-attachment: initial !important;
+        background-repeat: no-repeat;
+    }
+
+    .frase article {
+        width: 80%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .imgLeft, .imgRight {
+            width: 100%;
+            height: auto;
+        }
+
+    footer {
+        height: 150px;
+    }
+}
+
+@media all and (orientation: portrait) and (max-width: 799px) and (min-width: 451px) {
+    #vacio {
+        height: 500px;
+        background-position-y: 250px;
+        background-position-x: -350px;
+    }
+
+    .frase article {
+        width: 75%;
+        padding-top: 12.5%;
+        padding-bottom: 12.5%;
+    }
+
+    .imgLeft, .imgRight {
+            max-width: 48%;
+            max-height: 250px;
+            height: auto;
+        }
+
+        .imgLeft {
+            margin-left: 1%;
+            float: left;
+        }
+
+        .imgRight {
+            margin-right: 1%;
+            float: right;
+        }
+
+    footer {
+        height: 100px;
+    }
+}
+
+@media all and (orientation: landscape) {
+    #vacio {
+        height: 400px;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .imgLeft, .imgRight {
+            max-width: 48%;
+            max-height: 250px;
+            height: auto;
+        }
+
+        .imgLeft {
+            margin-left: 1%;
+            float: left;
+        }
+
+        .imgRight {
+            margin-right: 1%;
+            float: right;
+        }
+}
+
+header {
+    height: 100px;
+    position: initial;
+}
+
+    .pyf {
+        width: 150px;
+        padding-top: 15px;
+        margin-left: 10px;
+
+        font-size: 23px;
+    }
+
+    #menu {
+        margin-top:20px;
+        margin-right: 20px;
+    }
+
+/*** Section ***/
+.contenido {
+            min-height: 250px;        
+        }
+
+            .cart {
+                width: 90%;
+            }
+
+            #lastCont article, .cart {
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+        #lastCont {
+            min-height: 90px;
+        }
+
+        #lastCont article {
+            width: 80%;
+        }
+
+        .vacio {
+            height: 400px;
+            background-attachment: initial;
+            background-position: center;
+        }
+
+        .imgHorizontal {
+            width: 100%;
+            height: auto;
+            /*margin-left: 25%;*/
+        }
+
+        .imgVertical {
+            width: 80%;
+            height: auto;
+        }
+
+        .innerHistoryImg {
+            width: 100%;
+            height: auto;
+            padding-top:10px;
+            text-align: center;
+        }

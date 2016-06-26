@@ -60,12 +60,34 @@ function mostrarMenu()
         }
     }
     else {
-        cierra(ul_menu);
+        cierra(ul_menu, true);
     }
 }
 
-function cierra(ul_menu) {
-    for (var index = 0; index < ul_menu.childElementCount; index++) {
-        ul_menu.children[index].style.display = "none";
+function cierra(ul_menu, myBool) {
+    if(myBool == true) {
+        for (var index = 0; index < ul_menu.childElementCount; index++) {
+            ul_menu.children[index].style.display = "none";
+        }
     }
+}
+
+function getTime() {
+    now = new Date();
+    y2k = new Date("Jul 23 2016 17:30:00");
+    days = (y2k - now) / 1000 / 60 / 60 / 24;
+    daysRound = Math.floor(days);
+    hours = (y2k - now) / 1000 / 60 / 60 - (24 * daysRound);
+    hoursRound = Math.floor(hours);
+    minutes = (y2k - now) / 1000 /60 - (24 * 60 * daysRound) - (60 * hoursRound);
+    minutesRound = Math.floor(minutes);
+    seconds = (y2k - now) / 1000 - (24 * 60 * 60 * daysRound) - (60 * 60 * hoursRound) - (60 * minutesRound);
+    secondsRound = Math.round(seconds);
+    // sec = (secondsRound == 1) ? " segundo" : " segundos";
+    // min = (minutesRound == 1) ? " minuto" : " minutos, ";
+    // hr = (hoursRound == 1) ? " hora" : " horas, ";
+    // dy = (daysRound == 1) ? " día" : " d&iacute;as, "
+    // document.getElementById("timer").innerHTML = "Faltan " + daysRound + dy + hoursRound + hr + minutesRound + min + secondsRound + sec;
+    document.getElementById("timer").innerHTML = daysRound + "d " + hoursRound + "h " + minutesRound + "m " + secondsRound;
+    newtime = window.setTimeout("getTime();", 1000);
 }

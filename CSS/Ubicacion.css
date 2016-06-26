@@ -1,0 +1,24 @@
+body, header {
+    background-color: white;
+}
+
+    header a, header a:visited {
+        color:#336699;
+    }
+
+    .pyf {
+        width: 100px;
+        float: left;
+    }
+
+    #menu {
+        float: right;
+    }
+
+    #map-container, #instrucciones {
+        background-color: white;
+    }
+
+    #instrucciones table {
+        border-top: 1px solid black;
+    }

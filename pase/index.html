@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Pase para boda de Febe y Cristhian">
+        <meta name="keywords" content="Febe,Cristhian,Boda,Cruz Melgar,Hernández Báez, Pase, Mi pase">
         <title>Pase - Boda</title>
 
-        <link rel="stylesheet" href="../CSS/General.css">
-        <link rel="stylesheet" href="../CSS/PaseLogin.css">
-        <link rel="stylesheet" href="../CSS/Menu.css">
+        <link rel="stylesheet" href="../CSS/General.css" media="all">
+        <link rel="stylesheet" href="../CSS/PaseLogin.css" media="all">
+        <link rel="stylesheet" href="../CSS/PaseLoginDesktop.css" media="only screen and (min-device-width:799px)">
+        <link rel="stylesheet" href="../CSS/PaseLoginMovil.css" media="handheld, screen and (max-device-width:799px)">
+        <link rel="stylesheet" href="../CSS/Menu.css" media="all">
     </head>
 
-    <body onresize="sizeChanged()" onload="sizeChanged()">
+    <body onscroll="cierra(document.getElementById('ul_menu'))">
         <header>
             <div class="pyf">
                 <a href="../" title="Ve al inicio"><h1>Boda</h1></a>
@@ -18,23 +23,26 @@
             <nav id="menu">
                 <img id="imgMenu" src="../img/menu.jpg" title="Mostrar menú" onclick="mostrarMenu()">
                 <ul id="ul_menu">
-                    <li><a href="#" class="a_menu">Historia</a></li>
+                    <li><a href="../historia/" class="a_menu">Historia</a></li>
                     <li><a href="#" class="a_menu">Galería</a></li>
-                    <li><a href="#" class="a_menu">Ubicación</a></li>
+                    <li><a href="../ubicacion/" class="a_menu">Ubicación</a></li>
                     <li><a href="#" class="a_menu">Pase</a></li>
                 </ul>
             </nav>
         </header>
 
         <section id="principal">
-            <div title="El código ha sido proporcionado de manera única.">
+            <div id="div-formC" title="El código ha sido proporcionado de manera única.">
                 <form method="GET" action="../scripts/consultaCodigo.php">
                     <h1 id="titulo"><label for="codigo">Ingresa tu código</label></h1>
-                    <input type="password" id="codigo" name="code" placeholder="Código" required="required">
+                    <input type="password" id="codigo" name="code" placeholder="Código" required="required" maxlength="6">
                     <input type="submit" id="submit" value="Consultar">
                 </form>
 
-                <br><br><a href="mailto:dev.baez_crdrm@outlook.com" id="forgot" title="Enviar email" onclick="alert('Se enviará un correo electrónico al administrador. Describe tu problema y recibirás una respuesta pronto.')">Olvidé mi código</a>
+                <!--<br><br>-->
+                <section id="forgot">
+                    <a href="mailto:dev.baez_crdrm@outlook.com" title="Enviar email" onclick="alert('Se enviará un correo electrónico al administrador. Describe tu problema y recibirás una respuesta pronto.')">Olvidé mi código</a>
+                </section>
             </div>
         </section>
     </body>

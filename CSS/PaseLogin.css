@@ -1,16 +1,19 @@
 body {
-    background-image: url("../img/background2.jpg");
+    background-image: url("../img/PasePortada.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+
+    background-position-y: 125px;
 }
 
 header {
     min-height: 125px;
     height: auto;
-    background-color: black;
+    background-color: #FFF;
 }
 
     header a {
+        color: #336699;
         list-style: none;
     }
 
@@ -24,10 +27,11 @@ header {
 
         .pyf a {
             text-decoration: none;
-            color: white;
+            color: #336699;
         }
 
     #menu {
+        float: right;
         margin-top: 72px;
     }
 
@@ -35,32 +39,55 @@ header {
     min-height: 500px;
 }
 
-    #principal div {
-        width: 200px;
-        margin-left: auto;
-        margin-right: auto;
+    #div-formC {
+        width: 250px;
+        height: 150px;
+
         background-color: white;
+        opacity: 0.95;
+
+        border-radius: 12px;
     }
 
-    #principal div form {
+    #div-formC form {
         width: 100%;
         height: auto;
-        margin-top: 100px; 
     }
 
         #titulo {
             font-size: 23px;
-            margin-bottom: 5px;
+            padding-bottom: 15px;
+            padding-top: 25px;
             text-align: center;
-            color: green;
+            color: #CC9966;
         }
 
         #codigo {
-            width: 55%;
-            float: left
+            width: 120px;
+            float: left;
+            border: 1px solid #336699;
+            color: #336699;
+
+            margin-left: 15px;
         }
 
         #submit {
-            width: 40%;
+            width: 80px;
+            margin-right: 25px;
             float: right;
+            background-color: #336699;
+            color:white;
+            border: 2px solid #336699;
         }
+
+        #forgot {
+            width: 200px;;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+            #forgot a,  #forgot a:visited {
+                color: #336699;
+            }

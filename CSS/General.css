@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "Avenir-next-regular";
+    src: url("../fuentes/AvenirNextLTPro-Regular.otf");
+}
+@font-face {
+    font-family: "Avenir-next-Ulight";
+    src: url("../fuentes/Avenir Next LT W01 Ultra Light.otf");
+}
+@font-face {
+    font-family: "Avenir-next-mediumcn";
+    src: url("../fuentes/AvenirNextLTPro-MediumCn.otf");
+}
+@font-face {
+    font-family: "Univers";
+    src: url("../fuentes/Univers.otf");
+}
+@font-face {
+    font-family: "Univers-Light";
+    src: url("../fuentes/Univers-Light.otf");
+}
+
 @media screen and (min-device-width:800px){
     body, header, #principal, footer {
         min-width: 800px;
@@ -11,4 +32,13 @@
 
 header, #principal, footer {
     width: 100%;
+}
+
+header a {
+    list-style: none;
+    text-decoration: none;
+}
+
+#principal {
+    font-family: Avenir-next-Ulight;
 }

@@ -1,0 +1,40 @@
+header {
+    min-height: 100px;
+}
+
+    .pyf {
+        width: 150px;
+        padding-top: 15px;
+        margin-left: 10px;
+
+        font-size: 23px;
+    }
+
+    #menu {
+        margin-top:20px;
+        margin-right: 20px;
+    }
+
+#map-container, #map {
+    width: 100%;
+}
+
+#instrucciones {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+#instrucciones table {
+    margin-top:10px;
+}
+
+    table caption {
+        margin-bottom: 10px;
+    }
+
+    .imgDir img {
+        width: 50px;
+        height: auto;
+        padding: 10px;
+    }
