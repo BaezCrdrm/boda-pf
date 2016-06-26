@@ -1,13 +1,9 @@
-header {
-    background-color: blue;
-}
-
-body {
+body, header {
     background-color: white;
 }
 
     header a, header a:visited {
-        color:white;
+        color:#336699;
     }
 
     .pyf {
@@ -19,6 +15,6 @@ body {
         float: right;
     }
 
-    #principal > div {
+    #map-container, #instrucciones {
         background-color: white;
     }
