@@ -25,6 +25,17 @@ header {
     margin-left: 5%;
 }
 
+    #instrucciones h2 {
+        text-align: center;
+    }
+
+    #lugar {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
 #instrucciones table {
     margin-top:10px;
 }

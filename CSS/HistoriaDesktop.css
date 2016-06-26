@@ -93,3 +93,8 @@ header {
         max-width: 800px;
         min-width: 500px;
     }
+
+    #instrucciones h2 {
+        width: 200px;
+        background-color: red;
+    }

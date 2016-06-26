@@ -35,6 +35,21 @@ header {
     float: right;
 }
 
+    #h2-container {
+        width: 100%;
+    }
+
+        #instrucciones h2 {
+            width: 170px;
+            float: left;
+        }
+
+        #lugar {
+            float: left;
+            margin-left: 5%;
+            margin-top: 7px;
+        }
+
 #instrucciones table {
     width: 100%;
     height: auto;
