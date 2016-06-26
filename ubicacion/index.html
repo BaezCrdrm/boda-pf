@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="../CSS/Menu.css" media="all">
     </head>
 
-    <body onscroll="cierra(document.getElementById('ul_menu'))">
+    <body onscroll="cierra(document.getElementById('ul_menu'))" onload="cambiaRuta(document.getElementById('lugar').value)">
         <header>
             <div class="pyf">
                 <a href="../" title="Ve al inicio"><h1>Boda</h1></a>
@@ -44,14 +44,65 @@
             </div>
 
             <div id="instrucciones">
-                <h2>¿Cómo llegar?</h2>
-                <table>
+                <div id="h2-container">
+                    <h2>¿Cómo llegar?</h2>
+
+                    <select id="lugar" onchange="cambiaRuta(this.value)">
+                        <!--<option value="" selected></option>-->
+                        <option value="coca">De Coca-Cola</option>
+                        <option value="coatepec">De autopista a Coatepec</option>
+                    </select>
+                </div>
+                <table id="deCoca">
                     <caption>Indicaciones para llegar al salón de fiestas partiendo de Coca-Cola Coatepec</caption>
                     <tr>
                         <td class="imgDir">
                             <img src="../img/ubicacion/arriba.jpg" alt="">
                         </td>
                         <td class="indicacion">Seguir el camino hasta llegar a la <b>calle Libertad</b> alrededor de 1km.</td>
+                    </tr>
+                    <tr>
+                        <td class="imgDir">
+                            <img src="../img/ubicacion/derecha.jpg" alt="">
+                        </td>
+                        <td class="indicacion">Girar a la derecha en el siguiente camino al pasar por el <b>Gotcha Coatepec</b>.<br>
+                        <i>Nota: Si llegaste a Distribuidora de Aceros Coatepec o a Zucarmex, has pasado el camino.</i></td>
+                    </tr>
+                    <tr>
+                        <td class="imgDir">
+                            <img src="../img/ubicacion/arriba.jpg" alt="">
+                        </td>
+                        <td class="indicacion">Sigue el camino por alrededor de 1.6km.</td>
+                    </tr>
+                </table>
+
+                <table id="deCarretera">
+                    <caption>Indicaciones para llegar desde autopista Xalapa-Coatepec con dirección a Coatepec.</caption>
+
+                    <tr>
+                        <td class="imgDir">
+                            <img src="../img/ubicacion/derecha.jpg" alt="">
+                        </td>
+                        <td class="indicacion">Tomar libramiento a Córdoba.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="imgDir">
+                            <img src="../img/ubicacion/arriba.jpg" alt="">
+                        </td>
+                        <td class="indicacion">Seguir el libramiento hasta llegar a la carretera Xalapa-Las Trancas.</td>
+                    </tr>
+                    <tr>
+                        <td class="imgDir">
+                            <img src="../img/ubicacion/derecha.jpg" alt="">
+                        </td>
+                        <td class="indicacion">Girar a la derecha en el libramiento, en dirección a Coatepec.</td>
+                    </tr>
+                    <tr>
+                        <td class="imgDir">
+                            <img src="../img/ubicacion/retorno.jpg" alt="">
+                        </td>
+                        <td class="indicacion">Al estar en camino a Coatepec por la calle libertad, dar media vuelta a modo de regresar a la carretera Xalapa-Las Trancas.</td>
                     </tr>
                     <tr>
                         <td class="imgDir">

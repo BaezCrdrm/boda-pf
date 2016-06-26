@@ -91,3 +91,14 @@ function getTime() {
     document.getElementById("timer").innerHTML = daysRound + "d " + hoursRound + "h " + minutesRound + "m " + secondsRound;
     newtime = window.setTimeout("getTime();", 1000);
 }
+
+function cambiaRuta(valor){
+    if (valor == "coca") {
+        document.getElementById("deCarretera").style.display = "none";
+        document.getElementById("deCoca").style.display = "inline";         
+    }
+    else if(valor == "coatepec") {
+        document.getElementById("deCoca").style.display = "none";  
+        document.getElementById("deCarretera").style.display = "inline";  
+    }
+}
