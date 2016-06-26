@@ -39,20 +39,17 @@ header {
     min-height: 500px;
 }
 
-    #principal div {
+    #div-formC {
         width: 250px;
         height: 150px;
 
-        margin-left: 200px;
         background-color: white;
-        position: relative;
-        margin-top: 200px;
         opacity: 0.95;
 
         border-radius: 12px;
     }
 
-    #principal div form {
+    #div-formC form {
         width: 100%;
         height: auto;
     }
@@ -68,6 +65,8 @@ header {
         #codigo {
             width: 120px;
             float: left;
+            border: 1px solid #336699;
+            color: #336699;
 
             margin-left: 15px;
         }

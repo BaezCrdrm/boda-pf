@@ -1,6 +1,5 @@
 header {
     height: 120px;
-    position: absolute;
 }
 
     .pyf {
@@ -14,26 +13,83 @@ header {
         margin-top: 72px;
     }
 
+        /*#titulo {
+            padding: 30px;
+            padding-left: 60px;
+
+            text-align: left;
+            color: white;
+            font-size: 30px;
+            font-family: Avenir-next-regular;
+            font-weight: normal;
+        }*/
+
         .contenido {
-            height: 400px;
-        
+            min-height: 250px;        
         }
 
             .cart {
                 width: 90%;
+                column-count: 2;
+                column-gap: 20px;
+            }
+
+            #lastCont article, .cart {
                 margin-left: auto;
                 margin-right: auto;
                 padding-top: 20px;
                 padding-bottom: 20px;
-                column-count: 2;
-                column-gap: 20px;
             }
+
+        #lastCont {
+            min-height: 90px;
+        }
+
+        #lastCont article {
+            width: 80%;
+        }
 
         .vacio {
             height: 400px;
             background-attachment: fixed;
         }
 
-        #v2 {
-            /*background-position-y: 100px;*/
+        .imgHorizontal {
+            width: 50%;
+            height: auto;
+            margin-left: 25%;
         }
+
+        .imgVertical {
+            width: auto;
+            height: auto;
+            max-height: 250px;
+        }
+
+        .innerHistoryImg {
+            width: 100%;
+            height: auto;
+            padding-top:10px;
+            text-align: center;
+        }
+
+        .imgLeft, .imgRight {
+            max-width: 48%;
+            max-height: 250px;
+            height: auto;
+        }
+
+        .imgLeft {
+            margin-left: 1%;
+            float: left;
+        }
+
+        .imgRight {
+            margin-right: 1%;
+            float: right;
+        }
+
+    #vCan {
+        max-width: 800px;
+        min-width: 500px;
+    }

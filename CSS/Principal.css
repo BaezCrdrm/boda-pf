@@ -39,6 +39,7 @@ header {
     }
 
     .frase article {
+        width: 85%;
         margin-left: auto;
         margin-right: auto;
 
@@ -53,4 +54,8 @@ header {
 
 footer {
     background-color: white;
+}
+
+.fecha, #timer {
+    font-family: Avenir-next-Ulight;
 }

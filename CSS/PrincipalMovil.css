@@ -64,6 +64,31 @@ header {
     }
 
 /*** Section ***/
-    
+    #div-timer {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+
+        text-align: center;
+        font-family: Avenir-next-Ulight;
+
+        clear: both;
+    }
+
+    #timer {
+        margin-right: 5%;
+        float: right;
+    }
 
 /*** Footer ***/
+footer {
+    height: 100px;
+}
+
+    .fecha, #timer {
+        margin-top: 25px;
+        font-size: 35px;
+        margin-right: 5%;
+        float: right;
+    }

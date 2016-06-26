@@ -25,6 +25,10 @@ header {
         padding-bottom: 40px;
     }
 
+    #div-timer {
+        display: none;
+    }
+
     #vacio {
         height: 600px;
     }
@@ -34,3 +38,18 @@ header {
 footer {
     height: 100px;
 }
+
+    .fecha, #timer {
+        margin-top: 25px;
+        font-size: 35px;
+    }
+
+    .fecha {
+        margin-left: 5%;
+        float: left;
+    }
+
+    #timer {
+        margin-right: 5%;
+        float: right;
+    }

@@ -1,5 +1,9 @@
-body, header {
+header {
     background-color: #FFFFFF;
+}
+
+body, .contenido {
+    background-color: #336699;
 }
 
 #portada {
@@ -25,17 +29,26 @@ body, header {
         float: right;
     }
 
-    .cart {
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 14px;
-    }
+/*Section*/
+/*#titulo {
+    width: 100%;
+    height: auto;
+}*/
+
+.cart {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
 
 .contenido {
-        background-color: #336699;
         color: #FFFFFF;
-        font-family: Avenir-Next-Ulight
+        font-family: Avenir-Next-Ulight;
         /*font-family: Univers-Light;*/
+}
+
+.contenido img {
+    border-radius: 5px;
 }
 
 .vacio {
@@ -48,4 +61,19 @@ body, header {
 
 #v2 {
     background-image: url("../img/HistoriaTerc.jpg");
+}
+
+#v3 {
+    background-image: url("../img/HistoriaFinal.jpg");
+}
+
+.videos {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+video {
+    width: 80%;
+    height: auto;
 }
