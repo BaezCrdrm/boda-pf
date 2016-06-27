@@ -1,0 +1,27 @@
+body {
+    min-width: 900px;
+}
+
+#div-formC {
+    width: 300px;
+    margin-left: 5%;
+    margin-top:100px;
+    float: left;
+
+    border-radius: 10px;
+
+    background-color: #FF9999;
+}
+
+#titulo {
+    margin-top: 10px;
+    margin-bottom:10px;
+    text-align: center;
+    color: white;
+}
+
+#asistencia {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom:20px;
+}
