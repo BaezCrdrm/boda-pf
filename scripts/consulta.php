@@ -19,7 +19,13 @@
             }
 
             $c = mysqli_fetch_array(genQuery($query), MYSQLI_NUM);
+            
+
             session_start();
+
+            if($_SESSION['activeSession'] == true) {
+                session_unset();
+            }
             switch ($tipo[0]) {
                 case 1:
                     $_SESSION['activeSession'] = true;

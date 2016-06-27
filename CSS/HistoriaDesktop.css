@@ -92,6 +92,8 @@ header {
     #vCan {
         max-width: 800px;
         min-width: 500px;
+
+        margin-bottom: 30px;
     }
 
     #instrucciones h2 {

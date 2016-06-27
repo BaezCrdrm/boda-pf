@@ -74,7 +74,7 @@
 
             <div class="contenedores" id="contenedor-infantes">
                 <p id="inf"> <?php
-                    if(isset($_SESSION['ninios'])) {
+                    if(isset($_SESSION['ninios']) && $_SESSION['tipo'] == "fam") {
                         echo $_SESSION['ninios'];
                     }
                 ?>
@@ -91,7 +91,7 @@
             <form method="POST" action="../../scripts/asistencia.php">
                 <h1 id="titulo"><label for="codigo">Confirma tu asistencia</label></h1>
                 <select id="asistencia" name="confirma" onchange="submit();">
-                    <option value="" disabled <?php if($sel=="0"){echo "selected";}?>>Elige tu opción</option>
+                    <option value="" disabled <?php if($sel=="0"){echo "selected";}?>>Elige tu respuesta</option>
                     <option value="yes" <?php if($sel=="1"){echo "selected";}?>>Asistiré</option>
                     <option value="no" <?php if($sel=="2"){echo "selected";}?>>No asistiré</option>
                 </select>

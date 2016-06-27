@@ -24,13 +24,14 @@
     top: 700px;
     left: 75px;
 
-    font-family: KGAlwaysAGoodTime;
+    /*font-family: KGAlwaysAGoodTime;*/
     /*font-family: Cisgender;*/
+    font-family: Helvetica;
 }
 
     #nombre {
         max-width: 500px !important;
-        font-size: 27px;
+        font-size: 20px;
         text-align: center;
     }
 

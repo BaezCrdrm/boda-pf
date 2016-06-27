@@ -59,3 +59,7 @@ footer {
 .fecha, #timer {
     font-family: Avenir-next-Ulight;
 }
+
+.fecha {
+    text-decoration: none;
+}
