@@ -23,6 +23,7 @@
             switch ($tipo[0]) {
                 case 1:
                     $_SESSION['activeSession'] = true;
+                    $_SESSION['id'] = $code;
                     $_SESSION['nombre'] = $c[0];
                     $_SESSION['apellido'] = $c[1];
                     $_SESSION['tipo'] = "ind";
@@ -30,6 +31,7 @@
 
                 case 2:
                     $_SESSION['activeSession'] = true;
+                    $_SESSION['id'] = $code;
                     $_SESSION['nombre'] = $c[0];
                     $_SESSION['cantidad'] = $c[2];
                     $_SESSION['ninios'] = $c[3];
@@ -38,6 +40,7 @@
 
                 case 3:
                     $_SESSION['activeSession'] = true;
+                    $_SESSION['id'] = $code;
                     $_SESSION['nombre'] = $c[0];
                     $_SESSION['cantidad'] = $c[2];
                     $_SESSION['tipo'] = "gr";
@@ -50,6 +53,7 @@
         }
     }
 
+    // Administrador verifica asistencia
     function consultaAsistencia() {
         $query = "SELECT invitados.nombre, invitados.apellido, asistencia.estado FROM invitados INNER JOIN asistencia ON invitados.id=asistencia.id";
         $consulta = genQuery($query);
@@ -86,5 +90,13 @@
 
         $string .= "</table>";
         return $string;
+    }
+
+    // Marca selección para el usuario
+    function consultaAsistenciaPrevia($id) {
+        $query = "SELECT estado FROM asistencia WHERE id='$id'";
+
+        $reg = mysqli_fetch_array(genQuery($query), MYSQLI_NUM);
+        return $reg[0];
     }
 ?>

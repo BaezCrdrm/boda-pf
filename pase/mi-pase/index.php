@@ -18,16 +18,22 @@
         </div>
 
         <div id="div-formC" title="El código ha sido proporcionado de manera única.">
-                <form method="POST" action="../../scripts/consultaCodigo.php">
-                    <h1 id="titulo"><label for="codigo">Confirma tu asistencia</label></h1>
-                    <select id="asistencia" placeholder="Confirma tu asistencia">
-                        <option value="" disabled selected>Elige tu opción</option>
-                        <option value="yes">Asistiré</option>
-                        <option value="no">No asistiré</option>
-                    </select>
-                    <input type="submit" id="submit" value="Consultar">
-                </form>
-            </div>
+            <?php
+                require "../../scripts/consulta.php";
+                $sel = consultaAsistenciaPrevia($_SESSION['id']);
+            ?>
+
+            <form method="POST" action="../../scripts/asistencia.php">
+                <h1 id="titulo"><label for="codigo">Confirma tu asistencia</label></h1>
+                <select id="asistencia" name="confirma" onchange="submit();">
+                    <option value="" disabled <?php if($sel=="0"){echo "selected";}?>>Elige tu opción</option>
+                    <option value="yes" <?php if($sel=="1"){echo "selected";}?>>Asistiré</option>
+                    <option value="no" <?php if($sel=="2"){echo "selected";}?>>No asistiré</option>
+                </select>
+                <input type="hidden" name="id" value=<?php echo ("'".$_SESSION['id']."'"); ?> />
+                <!--<input type="submit" id="submit" value="Confirmar">-->
+            </form>
+        </div>
     </body>
 </html>
 
