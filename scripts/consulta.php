@@ -49,4 +49,42 @@
             return false;
         }
     }
+
+    function consultaAsistencia() {
+        $query = "SELECT invitados.nombre, invitados.apellido, asistencia.estado FROM invitados INNER JOIN asistencia ON invitados.id=asistencia.id";
+        $consulta = genQuery($query);
+
+        $string = "<table>
+        <tr>
+            <th>Nombre / Grupo / Familia</th>
+            <th>Apellido (individuo)</th>
+            <th>Estado</th>
+        </tr>";
+
+        while ($reg = mysqli_fetch_array($consulta, MYSQLI_NUM)) {
+            $string .= "<tr>
+                <td>".$reg[0]."</td>
+                <td>".$reg[1]."</td>";
+
+            $estado = "";
+            switch ($reg[2]) {
+                case 0:
+                    $estado = "Sin confirmaar";
+                    break;
+                
+                case 1:
+                    $estado = "Asistirá(n)";
+                    break;
+                
+                case 2:
+                    $estado = "No asistirá(n)";
+                    break;
+            }
+            $string .= "<td>$estado</td>
+            </tr>";
+        }
+
+        $string .= "</table>";
+        return $string;
+    }
 ?>
