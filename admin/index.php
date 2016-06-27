@@ -38,6 +38,8 @@
             <input type="submit" value="Agregar"/>
         </form>        
         <script src="../scripts/funciones.js"></script>
+
+        <a href="verificaAsistencia.php">Ver asistencias</a>
     </body>
 </html>
 <?php

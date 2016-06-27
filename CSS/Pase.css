@@ -1,0 +1,64 @@
+#pase, #pase img {
+    width: 500px ;
+    height: 889px;
+}
+
+#pase {
+    float: left;
+}
+
+#pase img {
+    position: absolute;
+    z-index: 20;
+}
+
+.contenedores, #contenedor-nombre {
+    position: relative;
+    z-index: 100;
+}
+
+#contenedor-nombre {
+    width: 360px;
+    height: 50px;
+    
+    top: 700px;
+    left: 75px;
+
+    font-family: KGAlwaysAGoodTime;
+    /*font-family: Cisgender;*/
+}
+
+    #nombre {
+        max-width: 500px !important;
+        font-size: 27px;
+        text-align: center;
+    }
+
+.contenedores {
+    width: 50px;
+    height: 40px;
+    left: 175px;
+    font-family: Cisgender;
+}
+
+.contenedores p {
+    z-index: 120px;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+#contenedor-adultos {
+    top: 695px;
+}
+
+    /*#adultos {
+
+    }*/
+
+#contenedor-infantes {
+    top: 700px;
+}
+
+    /*#inf {
+
+    }*/

@@ -23,6 +23,7 @@
             switch ($tipo[0]) {
                 case 1:
                     $_SESSION['activeSession'] = true;
+                    $_SESSION['id'] = $code;
                     $_SESSION['nombre'] = $c[0];
                     $_SESSION['apellido'] = $c[1];
                     $_SESSION['tipo'] = "ind";
@@ -30,6 +31,7 @@
 
                 case 2:
                     $_SESSION['activeSession'] = true;
+                    $_SESSION['id'] = $code;
                     $_SESSION['nombre'] = $c[0];
                     $_SESSION['cantidad'] = $c[2];
                     $_SESSION['ninios'] = $c[3];
@@ -38,6 +40,7 @@
 
                 case 3:
                     $_SESSION['activeSession'] = true;
+                    $_SESSION['id'] = $code;
                     $_SESSION['nombre'] = $c[0];
                     $_SESSION['cantidad'] = $c[2];
                     $_SESSION['tipo'] = "gr";
@@ -48,5 +51,52 @@
         else {
             return false;
         }
+    }
+
+    // Administrador verifica asistencia
+    function consultaAsistencia() {
+        $query = "SELECT invitados.nombre, invitados.apellido, asistencia.estado FROM invitados INNER JOIN asistencia ON invitados.id=asistencia.id";
+        $consulta = genQuery($query);
+
+        $string = "<table>
+        <tr>
+            <th>Nombre / Grupo / Familia</th>
+            <th>Apellido (individuo)</th>
+            <th>Estado</th>
+        </tr>";
+
+        while ($reg = mysqli_fetch_array($consulta, MYSQLI_NUM)) {
+            $string .= "<tr>
+                <td>".$reg[0]."</td>
+                <td>".$reg[1]."</td>";
+
+            $estado = "";
+            switch ($reg[2]) {
+                case 0:
+                    $estado = "Sin confirmaar";
+                    break;
+                
+                case 1:
+                    $estado = "Asistirá(n)";
+                    break;
+                
+                case 2:
+                    $estado = "No asistirá(n)";
+                    break;
+            }
+            $string .= "<td>$estado</td>
+            </tr>";
+        }
+
+        $string .= "</table>";
+        return $string;
+    }
+
+    // Marca selección para el usuario
+    function consultaAsistenciaPrevia($id) {
+        $query = "SELECT estado FROM asistencia WHERE id='$id'";
+
+        $reg = mysqli_fetch_array(genQuery($query), MYSQLI_NUM);
+        return $reg[0];
     }
 ?>
