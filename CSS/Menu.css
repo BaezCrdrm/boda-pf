@@ -48,6 +48,7 @@
 }
 
 .a_menu {
+    width: 100%;
     text-decoration: none;
     font-weight: bold;
     font-size: 25px;
