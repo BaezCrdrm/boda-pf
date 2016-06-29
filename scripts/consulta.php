@@ -19,7 +19,13 @@
             }
 
             $c = mysqli_fetch_array(genQuery($query), MYSQLI_NUM);
+            
+
             session_start();
+
+            if($_SESSION['activeSession'] == true) {
+                session_unset();
+            }
             switch ($tipo[0]) {
                 case 1:
                     $_SESSION['activeSession'] = true;
@@ -55,7 +61,7 @@
 
     // Administrador verifica asistencia
     function consultaAsistencia() {
-        $query = "SELECT invitados.nombre, invitados.apellido, asistencia.estado FROM invitados INNER JOIN asistencia ON invitados.id=asistencia.id";
+        $query = "SELECT invitados.nombre, invitados.apellido, asistencia.estado, invitados.id FROM invitados INNER JOIN asistencia ON invitados.id=asistencia.id";
         $consulta = genQuery($query);
 
         $string = "<table>
@@ -63,6 +69,7 @@
             <th>Nombre / Grupo / Familia</th>
             <th>Apellido (individuo)</th>
             <th>Estado</th>
+            <th>Código</th>
         </tr>";
 
         while ($reg = mysqli_fetch_array($consulta, MYSQLI_NUM)) {
@@ -85,6 +92,7 @@
                     break;
             }
             $string .= "<td>$estado</td>
+            <td>".$reg[3]."</td>
             </tr>";
         }
 

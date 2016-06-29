@@ -1,0 +1,54 @@
+@media screen and (max-device-width:799px) {
+    header {
+        height: 100px !important;
+    }
+    
+    #menu {
+        margin-top: 20px !important;
+        margin-right: 2%;
+    }
+}
+
+header {
+    height: 120px;
+}
+
+header, #menu ul {
+    background-color: #CC9966;
+}
+
+    header a {
+        color:white;
+    }
+
+.pyf {
+        width: 100px;
+        float: left;
+        margin-left: 2%;
+        margin-top: 30px;
+    }
+
+    #menu {
+        margin-top: 72px;
+        float: right;
+    }
+
+#principal h1 {
+    text-align: center;
+    margin-top: 175px;
+}
+
+    #principal > div {
+        width: 100%;
+    }
+
+    #timer-cont {
+        width: auto;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #timer {
+        font-family: Avenir-next-Ulight;
+        font-size: 25px;        
+    }

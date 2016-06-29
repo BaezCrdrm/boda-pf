@@ -46,6 +46,19 @@ header {
         font-size: 16px;
     }
 
+        .versiculo {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+
+            .libro {
+                float: right;
+                margin-right: 2%;
+                margin-bottom: 50px;
+            }
+
     #vacio {
         background-image: url("../img/PortadaSec.jpg");
         background-attachment: fixed;
@@ -58,4 +71,8 @@ footer {
 
 .fecha, #timer {
     font-family: Avenir-next-Ulight;
+}
+
+.fecha {
+    text-decoration: none;
 }
