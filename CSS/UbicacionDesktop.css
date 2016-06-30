@@ -63,7 +63,32 @@ header {
     }
 
 
-#ul-cont {
-    width: 30%;
-    display: inline-block;
+#contenedor-hoteles {
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
+
+#ul-cont li {
+    width: 20%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top:15px;
+}
+
+    #ul-cont li a div {
+        height: 280PX;
+    }
+
+    #ul-cont li a div:hover {
+        background-color: white;
+        color: #FF9999;
+        border: 1px solid #FF9999; 
+
+        -webkit-transition: 0.38s;
+        -moz-transition: 0.38s;
+        -o-transition: 0.38s;
+    }
+
+        .nombreHotel {
+            padding-top:20px;
+        }

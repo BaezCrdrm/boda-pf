@@ -49,3 +49,26 @@ header {
         height: auto;
         padding: 10px;
     }
+
+#contenedor-hoteles {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#ul-cont li {
+    width: 90%;
+    margin-left: 5%;
+    margin-top:10px;
+}
+
+#tituloHoteles {
+    margin-bottom: 20px;
+}
+
+#ul-cont li a div {
+    height: 320px;
+}
+
+.nombreHotel {
+        padding-top:25px;
+    }

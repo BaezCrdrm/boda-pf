@@ -19,7 +19,45 @@ body, header {
         background-color: white;
     }
 
+    #contenedor-hoteles {
+        width: 100%;
+        float: left;
+    }
+
+        #tituloHoteles {
+            text-align: center;
+        }
+
     #ul-cont {
         clear: both;
         width: 100%;
+    }
+
+    #ul-cont li {
+        display: inline-block;
+    }
+
+    #ul-cont li a div {
+        width: 100%;
+
+        text-align: center;
+        background-color: #FF9999;
+        border-radius: 8px;
+    }
+
+    #ul-cont li a, #ul-cont li a:visited {
+        text-decoration: none;
+        color: white;
+    }
+
+    #ul-cont li a div img {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+        float: left;
+        margin-left: 5%;
+    }
+
+    .nombreHotel {
+        clear: both;
     }
