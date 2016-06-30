@@ -18,3 +18,8 @@ body, header {
     #map-container, #instrucciones {
         background-color: white;
     }
+
+    #ul-cont {
+        clear: both;
+        width: 100%;
+    }
