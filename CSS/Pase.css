@@ -12,7 +12,7 @@
     z-index: 20;
 }
 
-.contenedores, #contenedor-nombre {
+.contenedores, #contenedor-nombre, #contenedor-mesaRegalos {
     position: relative;
     z-index: 100;
 }
@@ -52,14 +52,18 @@
     top: 695px;
 }
 
-    /*#adultos {
-
-    }*/
-
 #contenedor-infantes {
     top: 700px;
 }
 
-    /*#inf {
+#contenedor-mesaRegalos {
+    font-family: Cisgender;
+    top: 710px;
 
-    }*/
+    font-size: 31px;
+}
+
+    #contenedor-mesaRegalos * {
+        text-align: right;
+        margin-right: 60px;
+    }

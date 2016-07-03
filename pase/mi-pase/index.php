@@ -80,6 +80,11 @@
                 ?>
                 </p>
             </div>
+
+            <div id="contenedor-mesaRegalos">
+                <h4>Número de boda Liverpool</h4>
+                <p>37501213</p>
+            </div>
         </div>
 
         <div id="div-formC" title="El código ha sido proporcionado de manera única.">
