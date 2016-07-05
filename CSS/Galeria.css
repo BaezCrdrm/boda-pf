@@ -1,3 +1,7 @@
+body {
+    background-color: #61380B;
+}
+
 header, #menu ul {
     background-color: #CC9966;
 }
@@ -7,13 +11,14 @@ header a {
     }
 
 .pyf {
-        width: 100px;
-        float: left;
-        margin-left: 2%;
-        margin-top: 30px;
-    }
+    width: 100px;
+    float: left;
+}
 
     #menu {
-        margin-top: 72px;
         float: right;
     }
+
+#seccion-galeria {
+    width: 100%;
+}

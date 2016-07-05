@@ -1,3 +1,6 @@
+<?php
+    require "../scripts/galeria.php";
+?>
 <html lang="es">
     <head>
         <meta charset="utf-8">
@@ -7,11 +10,13 @@
 
         <title>Nuestra historia</title>
         <link rel="stylesheet" href="../CSS/General.css" media="all">
-        <link rel="stylesheet" href="../CSS/GaleriaProvisional.css" media="all">
+        <link rel="stylesheet" href="../CSS/Galeria.css" media="all">
+        <link rel="stylesheet" href="../CSS/GaleriaDesktop.css" media="only screen and (min-device-width:799px)">
+        <link rel="stylesheet" href="../CSS/GaleriaMovil.css" media="handheld, screen and (max-device-width:799px)" />
         <link rel="stylesheet" href="../CSS/Menu.css" media="all">
     </head>
 
-    <body onscroll="cierra(document.getElementById('ul_menu'), false)" onload="getTimeinner()">
+    <body onscroll="cierra(document.getElementById('ul_menu'), false)">
         <header>
             <div class="pyf">
                 <a href="../" title="Ir a inicio - Boda Febe & Cristhian"><h1>F&C</h1></a>
@@ -31,12 +36,21 @@
         <section id="principal">
             <div id="seccion-galeria">
                 <nav id="menu-albumes">
-
+                    <ul id="ul-albumes">
+                        <?php
+                            echo getAlbums();
+                        ?>
+                    </ul>
                 </nav>
 
                 <section id="album">
                     <div id="cont-img">
-                        <!-- Aquí va la imagen y los controles de siguiente y atrás-->
+                        <a href="../img/historia.jpg" target="_blank"><img id="mainImg" src="../img/historia.jpg"/></a>
+                        
+                        <nav id="controles">
+                            <img src="../img/LAr.png" />
+                            <img src="../img/RAr.png" />
+                        </nav>
                     </div>
 
                     <nav id="imgAlbum">
