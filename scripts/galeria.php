@@ -1,9 +1,11 @@
-$path = "../img/galeria/";
+<?php
+    $path = "../img/galeria/";
 
-function getFolders() {
-    return scandir($path);
-}
+    function getFolders() {
+        return scandir($path);
+    }
 
-function getAlbums(){
-    
-}
+    function getAlbums(){
+        
+    }
+?>
