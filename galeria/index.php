@@ -1,5 +1,13 @@
 <?php
     require "../scripts/galeria.php";
+    $carpetas = getAlbums();
+
+    $album = $_GET['selectedAlbum'];
+    // $album = $_POST['selectedAlbum'];
+    if(isset($album))
+    {
+        $imagenes = getImages($album);
+    }
 ?>
 <html lang="es">
     <head>
@@ -36,29 +44,52 @@
         <section id="principal">
             <div id="seccion-galeria">
                 <nav id="menu-albumes">
-                    <ul id="ul-albumes">
-                        <?php
-                            echo getAlbums();
-                        ?>
-                    </ul>
+                    <form id="formAlbum" action="" method="get">
+                        <input id="sel" name="selectedAlbum" type="hidden">
+                        <ul id="ul-albumes">
+                            <?php
+                                echo printAlbums($carpetas);
+                            ?>
+                        </ul>
+                    </form>
                 </nav>
 
                 <section id="album">
                     <div id="cont-img">
-                        <a href="../img/historia.jpg" target="_blank"><img id="mainImg" src="../img/historia.jpg"/></a>
+                        <a id="a-cont-img" target="_blank"><img id="mainImg" src="../img/historia.jpg"/></a>
                         
                         <nav id="controles">
-                            <img src="../img/LAr.png" />
-                            <img src="../img/RAr.png" />
+                            <img onclick="arrowImg('back')" ontouchend="arrowImg('back')" src="../img/LAr.png" />
+                            <img onclick="arrowImg('forward')" ontouchend="arrowImg('forward')" src="../img/RAr.png" />
                         </nav>
                     </div>
 
                     <nav id="imgAlbum">
                         <!--Aquí van imágenes cargadas de la carpeta de origen-->
+                        <ul id="ul-images-preview">
+                            <?php
+                                // echo getImages();
+                            ?>
+                        </ul>
                     </nav>
                 </section>
             </div>
         </section>
     </body>
     <script src="../scripts/funciones.js"></script>
+    <script src="../scripts/galeria.js"></script>
+    <?php
+        if(isset($album))
+        {
+    ?>
+        <script type="text/javascript">
+            var imagenes = <?php echo json_encode($imagenes);?>;
+            if(imagenes.length > 0) 
+            {
+                cargaImagenes(imagenes, <?php echo "'".getPath()."', '".$album."'";?>);
+            }
+        </script>
+    <?php
+        }
+    ?>
 </html>

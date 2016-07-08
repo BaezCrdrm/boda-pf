@@ -74,5 +74,17 @@ header {
             height: 100%;
 
             float: right;
+            overflow: scroll;
+            overflow-x: hidden; 
             background-color: yellow;
         }
+
+            #ul-images-preview {
+                width: 100%;
+            }
+
+                .imgPreview {
+                    width: 80%;
+                    height: auto;
+                    margin-left: 10%;
+                }
