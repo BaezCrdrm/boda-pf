@@ -26,6 +26,10 @@
     font-family: "KGAlwaysAGoodTime";
     src: url("../fuentes/KGAlwaysAGoodTime.ttf");
 }
+@font-face {
+    font-family: "SegoeMDL2";
+    src: url("../fuentes/segmdl2.ttf");
+}
 
 @media screen and (min-device-width:800px){
     body, header, #principal, footer {

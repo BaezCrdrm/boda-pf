@@ -1,6 +1,7 @@
 var i = 0;
 var imagenes;
 var rutas;
+var menuAlbum = false;
 
 function seleccionAlbum(form, album, oculto)
 {
@@ -65,4 +66,15 @@ function arrowImg(direccion)
 
 function changeHref(href) {
     document.getElementById("a-cont-img").href = href;
+}
+
+function showAlbums() {
+    var myMenu = document.getElementById("formAlbum");
+    if (menuAlbum == false) {
+        myMenu.style.display = "initial";
+    }
+    else {
+        myMenu.style.display = "none";
+    }
+    menuAlbum = !menuAlbum;
 }

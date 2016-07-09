@@ -1,4 +1,5 @@
 <?php
+    ini_set('display_errors', 'Off');
     require "../scripts/galeria.php";
     $carpetas = getAlbums();
 
@@ -43,6 +44,7 @@
 
         <section id="principal">
             <div id="seccion-galeria">
+                <h2 id="show-albums-menu" ontouchend="showAlbums()">Albumes <span id="icon-albums">&#xE019</span></h2>
                 <nav id="menu-albumes">
                     <form id="formAlbum" action="" method="get">
                         <input id="sel" name="selectedAlbum" type="hidden">
@@ -58,9 +60,14 @@
                     <div id="cont-img">
                         <a id="a-cont-img" target="_blank"><img id="mainImg" src="../img/historia.jpg"/></a>
                         
-                        <nav id="controles">
+                        <nav id="controles1">
                             <img onclick="arrowImg('back')" ontouchend="arrowImg('back')" src="../img/LAr.png" />
                             <img onclick="arrowImg('forward')" ontouchend="arrowImg('forward')" src="../img/RAr.png" />
+                        </nav>
+
+                        <nav id="controles2">
+                            <label onclick="arrowImg('back')" ontouchend="arrowImg('back')">Anterior</label>
+                            <label onclick="arrowImg('forward')" ontouchend="arrowImg('forward')">Siguiente</label>
                         </nav>
                     </div>
 

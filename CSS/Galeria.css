@@ -6,6 +6,10 @@ header, #menu ul {
     background-color: #CC9966;
 }
 
+header {
+    height: 120px;
+}
+
 header a {
         color:white;
     }
@@ -22,3 +26,13 @@ header a {
 #seccion-galeria {
     width: 100%;
 }
+
+    #icon-albums {
+        font-family: SegoeMDL2;
+    }
+
+    #controles1, #controles2 {
+        clear: both;
+        float: right;
+        position: static;
+    }
