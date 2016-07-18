@@ -78,3 +78,12 @@ function showAlbums() {
     }
     menuAlbum = !menuAlbum;
 }
+
+//// ARREGLAR!
+function getDevice() {
+    var menuChar = document.getElementById("show-albums-menu");
+    if(menuChar.style.display != "initial")
+    {
+        alert("Qué rollo");
+    }
+}

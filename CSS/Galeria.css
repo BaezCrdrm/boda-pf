@@ -36,3 +36,11 @@ header a {
         float: right;
         position: static;
     }
+
+    #ul-albumes {
+        list-style: none;
+    }
+
+        #ul-albumes li {
+            margin: 5px 10px;
+        }
