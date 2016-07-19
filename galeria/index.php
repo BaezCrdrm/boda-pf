@@ -25,7 +25,7 @@
         <link rel="stylesheet" href="../CSS/Menu.css" media="all">
     </head>
 
-    <body onscroll="cierra(document.getElementById('ul_menu'), false)" onload="getDevice()">
+    <body onscroll="cierra(document.getElementById('ul_menu'), false)">
         <header>
             <div class="pyf">
                 <a href="../" title="Ir a inicio - Boda Febe & Cristhian"><h1>F&C</h1></a>

@@ -65,7 +65,8 @@ function arrowImg(direccion)
 }
 
 function changeHref(href) {
-    document.getElementById("a-cont-img").href = href;
+    if(window.innerWidth >= 800)
+        document.getElementById("a-cont-img").href = href;
 }
 
 function showAlbums() {
@@ -77,13 +78,4 @@ function showAlbums() {
         myMenu.style.display = "none";
     }
     menuAlbum = !menuAlbum;
-}
-
-//// ARREGLAR!
-function getDevice() {
-    var menuChar = document.getElementById("show-albums-menu");
-    if(menuChar.style.display != "initial")
-    {
-        alert("Qué rollo");
-    }
 }
