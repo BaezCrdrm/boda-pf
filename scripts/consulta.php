@@ -61,7 +61,7 @@
 
     // Administrador verifica asistencia
     function consultaAsistencia() {
-        $query = "SELECT invitados.nombre, invitados.apellido, asistencia.estado, invitados.id FROM invitados INNER JOIN asistencia ON invitados.id=asistencia.id";
+        $query = "SELECT invitados.nombre, invitados.apellido, asistencia.estado, invitados.id, invitados.canGrupo, infantes.cantidad FROM invitados INNER JOIN asistencia INNER JOIN infantes ON invitados.id=asistencia.id AND invitados.id=infantes.id";
         $consulta = genQuery($query);
 
         $string = "<table>
@@ -70,6 +70,8 @@
             <th>Apellido (individuo)</th>
             <th>Estado</th>
             <th>Código</th>
+            <th>Adultos</th>
+            <th>Infantes</th>
         </tr>";
 
         while ($reg = mysqli_fetch_array($consulta, MYSQLI_NUM)) {
@@ -93,6 +95,11 @@
             }
             $string .= "<td>$estado</td>
             <td>".$reg[3]."</td>
+            <td>".$reg[4]."</td>
+            <td><b>";
+            if($reg[5] > 0) {
+                $string .= $reg[5];}
+            $string .= "<b/></td>
             </tr>";
         }
 

@@ -28,7 +28,7 @@
             <input type="text" name="apellido" class="textP1" placeholder="Apellido de persona" /><br><br>
             
             <label for="">Familia</label> <input type="radio" name="sel1" value="grupo" onchange="cambioPersona('textP2', 'textP1')"/><br>
-            <input type="text" name="grupo" class="textP2" placeholder="Familia/Grupo" disabled="disabled"/><br>
+            <input type="text" name="grupo" class="textP2" placeholder="Familia" disabled="disabled"/><br>
             <input type="number" name="cantGrupo" min="2" class="textP2" placeholder="Integrantes" disabled="disabled"/><br>
             <input type="number" name="cantFamNinos" min="0" class="textP2" placeholder="Niños" disabled="disabled" value = "0"/><br><br>
             
